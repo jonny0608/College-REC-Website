@@ -1,0 +1,9 @@
+.Navbarsquare {
+    padding: 80px;
+    height: 300px;
+    width: 60px;
+    background-color: #57150B;
+    position: absolute;
+    top: 80px;
+    border-radius: 20px;
+}
