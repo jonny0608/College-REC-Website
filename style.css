@@ -407,6 +407,30 @@ img {
 .life-card p {
   color: #cfcfcf;
 }
+.student-video {
+  margin-top: 55px;
+  padding: 35px;
+  background: #252525;
+  border-left: 5px solid var(--rowan-gold);
+}
+
+.student-video h3 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.student-video p:not(.eyebrow) {
+  color: #cfcfcf;
+  line-height: 1.7;
+}
+
+.student-video-frame {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
 
 .admissions-card {
   min-height: 330px;
