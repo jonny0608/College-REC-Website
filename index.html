@@ -1,45 +1,34 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
-    <head>
-        
+<html lang="en">
 
-        <title>Title</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Rowan Experience</title>
 
-        <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-    </head>
-
-    <body>
-        <header>
-            
-        </header>
-        <main>
-            <body>
+<body>
 
   <!-- MOBILE NAV -->
   <nav class="navbar navbar-dark mobile-nav sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#home">ROWAN UNIVERSITY</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
   </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas offcanvas-start text-bg-dark" id="mobileMenu">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title">Explore Rowan</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
     </div>
 
     <div class="offcanvas-body">
@@ -50,6 +39,7 @@
       <a class="mobile-link" href="#visit">Visit</a>
     </div>
   </div>
+
 
   <!-- SIDE NAV -->
   <aside class="side-nav">
@@ -68,46 +58,42 @@
     </nav>
   </aside>
 
+
   <main class="page-content">
 
-    <!-- TOP BAR -->
     <header class="top-bar" id="home">
       <span>ROWAN UNIVERSITY</span>
-      <a href="#admissions">Apply</a>
+      <a href="#admissions">APPLY</a>
     </header>
 
-    <!-- HERO/CAROUSEL -->
+
+    <!-- HERO -->
     <section class="hero-section">
+
       <div id="rowanCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#rowanCarousel" data-bs-slide-to="0" class=""></button>
-          <button type="button" data-bs-target="#rowanCarousel" data-bs-slide-to="1" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#rowanCarousel" data-bs-slide-to="2" class=""></button>
+          <button data-bs-target="#rowanCarousel" data-bs-slide-to="0" class="active"></button>
+          <button data-bs-target="#rowanCarousel" data-bs-slide-to="1"></button>
+          <button data-bs-target="#rowanCarousel" data-bs-slide-to="2"></button>
         </div>
 
         <div class="carousel-inner">
 
-          <div class="carousel-item hero-slide slide-one active carousel-item-start">
+          <div class="carousel-item active hero-slide slide-one">
             <div class="hero-overlay">
               <p class="eyebrow">DISCOVER YOUR NEXT CHAPTER</p>
               <h1>Find Your Place at Rowan.</h1>
-              <p>
-                Explore academics, student life, opportunities, and the community
-                that make Rowan worth discovering.
-              </p>
+              <p>Explore academics, student life, opportunities, and the community that make Rowan worth discovering.</p>
               <a href="#programs" class="btn btn-rowan-gold">Explore Programs</a>
             </div>
           </div>
 
-          <div class="carousel-item hero-slide slide-two carousel-item-next carousel-item-start">
+          <div class="carousel-item hero-slide slide-two">
             <div class="hero-overlay">
               <p class="eyebrow">BUILD YOUR FUTURE</p>
               <h2>Learn by Doing.</h2>
-              <p>
-                Connect classroom learning with hands-on experiences,
-                organizations, projects, and career preparation.
-              </p>
+              <p>Connect classroom learning with hands-on experiences, organizations, projects, research, and career preparation.</p>
               <a href="#student-life" class="btn btn-rowan-gold">Student Life</a>
             </div>
           </div>
@@ -116,48 +102,47 @@
             <div class="hero-overlay">
               <p class="eyebrow">READY FOR WHAT'S NEXT?</p>
               <h2>Start Your Rowan Journey.</h2>
-              <p>
-                Learn about admissions, costs, financial aid, and the next steps
-                toward becoming a Rowan student.
-              </p>
+              <p>Learn about admissions, costs, financial aid, and the next steps toward becoming a Rowan student.</p>
               <a href="#admissions" class="btn btn-rowan-gold">Admissions</a>
             </div>
           </div>
 
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#rowanCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev"
+          data-bs-target="#rowanCarousel"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon"></span>
         </button>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#rowanCarousel" data-bs-slide="next">
+        <button class="carousel-control-next"
+          data-bs-target="#rowanCarousel"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon"></span>
         </button>
 
       </div>
 
-      <!-- QUICK LINKS -->
       <div class="quick-links container">
         <a href="#about" class="quick-pill">About</a>
         <a href="#programs" class="quick-pill">Programs</a>
         <a href="#student-life" class="quick-pill">Student Life</a>
         <a href="#admissions" class="quick-pill">Admissions</a>
       </div>
+
     </section>
 
-    <!-- INTRO CARDS / LIKE YOUR FIGMA HOME PAGE -->
+
+    <!-- HOME CARDS -->
     <section class="section-space">
       <div class="container">
-        <div class="row g-4 align-items-stretch">
+        <div class="row g-4">
 
           <div class="col-lg-4">
-            <article class="feature-card tall-card">
+            <article class="feature-card">
               <span class="section-number">01</span>
               <h3>Why Rowan?</h3>
-              <p>
-                A university experience built around academics, involvement,
-                opportunity, and a campus community where students can grow.
-              </p>
+              <p>Rowan combines academics, hands-on learning, research, campus involvement, and career preparation.</p>
               <a href="#about" class="text-link">Learn more →</a>
             </article>
           </div>
@@ -166,22 +151,16 @@
             <article class="apply-card">
               <p class="eyebrow">YOUR NEXT STEP</p>
               <h3>Ready to Apply?</h3>
-              <p>
-                Review admissions information and see what you need before
-                starting your application.
-              </p>
+              <p>Review admissions information and learn what you need before beginning your Rowan application.</p>
               <a href="#admissions" class="btn btn-dark w-100">APPLY NOW</a>
             </article>
           </div>
 
           <div class="col-lg-4">
-            <article class="feature-card tall-card">
+            <article class="feature-card">
               <span class="section-number">02</span>
               <h3>Explore Campus Life</h3>
-              <p>
-                From clubs and athletics to campus events and residence life,
-                there are plenty of ways to get involved.
-              </p>
+              <p>From clubs and athletics to events and recreation, there are plenty of ways to get involved.</p>
               <a href="#student-life" class="text-link">Explore student life →</a>
             </article>
           </div>
@@ -190,40 +169,41 @@
       </div>
     </section>
 
+
     <!-- ABOUT -->
     <section class="section-space light-section" id="about">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow brown-text">ABOUT THE SCHOOL</p>
           <h2>The Rowan Experience</h2>
           <p class="section-intro">
-            Rowan University is located in Glassboro, New Jersey. Rowan is a public university that offers a wide range of academic programs and hands-on learning opportunities. Students can explore their interests, engage in research, and participate in a vibrant campus community.
+            Rowan University is a public research university in Glassboro, New Jersey,
+            offering academics, research, hands-on learning, organizations, and career opportunities.
           </p>
         </div>
 
         <div class="row g-4">
+
           <div class="col-lg-7">
             <div class="about-story">
+
               <div class="about-image">
-                <img src="rowan-university-drone-pic.jpg">
+                <img src="rowan-university-drone-pic.jpg" alt="Rowan University campus">
               </div>
 
               <div class="about-copy">
                 <h3>A Campus Built for Possibility</h3>
-                <p>
-                  <!-- this paragraph keep the focus on information about rowans campus and accademic approach location and student opportunities -->
-                </p>
-                <p>
-                 
-                  <!--  the writing short and recruitment-focused tell a future
-                  student why the information matters to them.-->
-                </p>
+                <p>Rowan combines the opportunities of a growing public research university with a campus community where students can become involved in academics, research, and organizations.</p>
+                <p>Projects, internships, leadership opportunities, and research help students connect their education with future careers.</p>
               </div>
+
             </div>
           </div>
 
           <div class="col-lg-5">
             <div class="info-stack">
+
               <div class="mini-info">
                 <span>LOCATION</span>
                 <strong>Glassboro, New Jersey</strong>
@@ -231,31 +211,32 @@
 
               <div class="mini-info">
                 <span>SCHOOL TYPE</span>
-                <strong>Public University</strong>
+                <strong>Public Research University</strong>
               </div>
 
               <div class="mini-info">
                 <span>WHAT STANDS OUT</span>
-                <strong>Hands-on opportunities + campus community</strong>
+                <strong>Hands-on learning + campus community</strong>
               </div>
+
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
+
     <!-- PROGRAMS -->
     <section class="section-space" id="programs">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow brown-text">FIND YOUR PATH</p>
           <h2>Explore Programs</h2>
-          <p class="section-intro">
-            Choose a category to filter the sample programs below.
-          </p>
+          <p class="section-intro">Choose a category to explore different academic areas.</p>
         </div>
 
-        
         <div class="program-filter mb-4">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="business">Business</button>
@@ -263,17 +244,13 @@
           <button class="filter-btn" data-filter="creative">Creative</button>
         </div>
 
-        <div class="row g-4" id="programGrid">
+        <div class="row g-4">
 
           <div class="col-md-6 col-xl-4 program-item" data-category="business">
             <div class="program-card">
               <span class="program-tag">BUSINESS</span>
               <h3>Accounting</h3>
-              <p>
-                Build skills in financial reporting, analysis, business systems,
-                and professional decision-making.
-              </p>
-              <a href="#" class="text-link">Program details →</a>
+              <p>Build skills in financial reporting, analysis, taxation, and professional decision-making.</p>
             </div>
           </div>
 
@@ -281,11 +258,7 @@
             <div class="program-card">
               <span class="program-tag">BUSINESS</span>
               <h3>Finance</h3>
-              <p>
-                Explore investments, financial planning, markets, business
-                strategy, and quantitative decision-making.
-              </p>
-              <a href="#" class="text-link">Program details →</a>
+              <p>Explore investments, financial planning, markets, and business strategy.</p>
             </div>
           </div>
 
@@ -293,11 +266,7 @@
             <div class="program-card">
               <span class="program-tag">STEM</span>
               <h3>Computer Science</h3>
-              <p>
-                Study programming, software development, problem-solving,
-                computing systems, and emerging technology.
-              </p>
-              <a href="#" class="text-link">Program details →</a>
+              <p>Study programming, software development, computing systems, and technology.</p>
             </div>
           </div>
 
@@ -305,11 +274,7 @@
             <div class="program-card">
               <span class="program-tag">STEM</span>
               <h3>Engineering</h3>
-              <p>
-                Learn through design, teamwork, labs, and real-world technical
-                problem solving.
-              </p>
-              <a href="#" class="text-link">Program details →</a>
+              <p>Learn through design, teamwork, laboratories, research, and technical problem solving.</p>
             </div>
           </div>
 
@@ -317,11 +282,7 @@
             <div class="program-card">
               <span class="program-tag">CREATIVE</span>
               <h3>Communication</h3>
-              <p>
-                Develop storytelling, media, writing, presentation, and
-                communication skills for modern careers.
-              </p>
-              <a href="#" class="text-link">Program details →</a>
+              <p>Develop storytelling, media, writing, and presentation skills.</p>
             </div>
           </div>
 
@@ -329,11 +290,7 @@
             <div class="program-card">
               <span class="program-tag">CREATIVE</span>
               <h3>Design</h3>
-              <p>
-                Combine visual thinking, technology, creativity, and practical
-                project experience.
-              </p>
-              <a href="#" class="text-link">Program details →</a>
+              <p>Combine visual thinking, technology, creativity, and practical projects.</p>
             </div>
           </div>
 
@@ -341,67 +298,78 @@
       </div>
     </section>
 
+
     <!-- STUDENT LIFE -->
     <section class="section-space dark-section" id="student-life">
       <div class="container">
-        <div class="section-heading text-white">
+
+        <div class="section-heading">
           <p class="eyebrow gold-text">BEYOND THE CLASSROOM</p>
           <h2>Student Life</h2>
-          <p class="section-intro text-white-50">
-            Show future students what being part of the campus community can
-            actually look like.
-          </p>
+          <p class="section-intro">Find ways to get involved, meet people, and experience Rowan outside the classroom.</p>
         </div>
 
         <div class="row g-4">
 
           <div class="col-md-4">
             <article class="life-card">
-              <div class="image-placeholder small-placeholder">Club photo</div>
               <h3>Clubs + Organizations</h3>
-              <p>
-                Find organizations that match your interests, career goals, or
-                hobbies and meet people outside the classroom.
-              </p>
+              <p>Explore organizations based around academics, culture, service, hobbies, careers, and shared interests.</p>
             </article>
           </div>
 
           <div class="col-md-4">
             <article class="life-card">
-              <div class="image-placeholder small-placeholder">Athletics photo</div>
               <h3>Athletics + Recreation</h3>
-              <p>
-                Support Rowan teams, stay active, or get involved through
-                recreation and campus activities.
-              </p>
+              <p>Support Rowan athletics or participate in sport clubs, intramurals, recreation, and fitness.</p>
             </article>
           </div>
 
           <div class="col-md-4">
             <article class="life-card">
-              <div class="image-placeholder small-placeholder">Campus photo</div>
               <h3>Campus Events</h3>
-              <p>
-                Experience events, performances, traditions, and social
-                opportunities throughout the school year.
-              </p>
+              <p>Attend activities and programs throughout the year and become part of the campus community.</p>
             </article>
           </div>
 
         </div>
+
+        <div class="student-video">
+          <div class="row align-items-center g-4">
+
+            <div class="col-lg-4">
+              <p class="eyebrow gold-text">EXPERIENCE THE CAMPUS</p>
+              <h3>See Rowan From Above</h3>
+              <p>Take a look around Rowan University's campus and experience the environment students see every day.</p>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="ratio ratio-16x9 student-video-frame">
+
+                <iframe
+                  src="https://www.youtube.com/embed/kir6YMOjP4w"
+                  title="Rowan University Campus"
+                  allowfullscreen>
+                </iframe>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- COST + ADMISSIONS -->
+
+    <!-- ADMISSIONS -->
     <section class="section-space light-section" id="admissions">
       <div class="container">
+
         <div class="section-heading">
           <p class="eyebrow brown-text">PLAN YOUR NEXT STEP</p>
           <h2>Cost + Admissions</h2>
-          <p class="section-intro">
-            Use current official Rowan information when you fill in the exact
-            tuition, admissions, scholarship, and financial-aid details.
-          </p>
+          <p class="section-intro">Learn about tuition, admissions requirements, scholarships, and financial aid.</p>
         </div>
 
         <div class="row g-4">
@@ -410,11 +378,8 @@
             <div class="admissions-card">
               <span class="section-number">01</span>
               <h3>Cost</h3>
-              <p class="data-placeholder">Add current tuition / cost information</p>
-              <p>
-                Explain the basic cost in one or two sentences instead of
-                overwhelming visitors with a huge table.
-              </p>
+              <p class="data-placeholder">2026–27 Tuition + Fees</p>
+              <p>$18,300 per year for New Jersey residents and $29,664 for out-of-state students.</p>
             </div>
           </div>
 
@@ -422,11 +387,8 @@
             <div class="admissions-card featured">
               <span class="section-number">02</span>
               <h3>Admissions</h3>
-              <p class="data-placeholder">Add current application expectations</p>
-              <p>
-                Mention the main materials applicants should know about and link
-                to the official admissions page.
-              </p>
+              <p class="data-placeholder">Start Your Application</p>
+              <p>Applicants submit an application, transcript, recommendation, essay, and application fee.</p>
             </div>
           </div>
 
@@ -434,11 +396,8 @@
             <div class="admissions-card">
               <span class="section-number">03</span>
               <h3>Financial Aid</h3>
-              <p class="data-placeholder">Add scholarships + aid information</p>
-              <p>
-                Give future students a simple place to learn about scholarships,
-                FAFSA, grants, and other aid resources.
-              </p>
+              <p class="data-placeholder">Scholarships + Aid</p>
+              <p>Students can explore merit scholarships, FAFSA opportunities, grants, and additional aid.</p>
             </div>
           </div>
 
@@ -446,49 +405,38 @@
       </div>
     </section>
 
+
     <!-- FINAL CTA -->
     <section class="final-cta" id="visit">
       <div class="container text-center">
+
         <p class="eyebrow">YOUR FUTURE STARTS HERE</p>
         <h2>Ready to Learn More About Rowan?</h2>
-        <p>
-          Take the next step by exploring programs, planning a visit,
-          requesting information, or beginning your application.
-        </p>
+
+        <p>Explore programs, visit campus, request information, or begin your application.</p>
 
         <div class="cta-buttons">
           <a href="#programs" class="btn btn-rowan-gold">Explore Programs</a>
-          <a href="#" class="btn btn-outline-light">Visit Campus</a>
-          <a href="#" class="btn btn-outline-light">Request Info</a>
-          <a href="#" class="btn btn-light">Apply</a>
+          <a href="https://admissions.rowan.edu/visit/" class="btn btn-outline-light">Visit Campus</a>
+          <a href="https://admissions.rowan.edu/" class="btn btn-outline-light">Request Info</a>
+          <a href="https://admissions.rowan.edu/admissions-process/" class="btn btn-light">Apply</a>
         </div>
+
       </div>
     </section>
 
+
     <footer>
       <div class="container">
-        <p class="mb-1">Unofficial student recruitment website concept.</p>
-        <p class="mb-0">WDP Year 3 • College Recruitment Project</p>
+        <p class="mb-0"> copyright © 2026 JonathanDesigns </p>
       </div>
     </footer>
 
   </main>
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 
-
 </body>
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <script src="script.js"></script>
-        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
-    </body>
 </html>
